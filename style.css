@@ -15,17 +15,66 @@ h1{
     color: #192b59;
 }
 
-nav{
+nav ul{
     font-size: 12px;
     font-weight: 700;
     color: #6e7ea9;
     text-transform: uppercase;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-group a{
+    margin-left: 15px;
+}
+
+.btn-primary{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #1085e4;
+    padding: 20px 41px;
+    border-radius: 30px;
+    border: 1px solid #1085e4;
+}
+
+.btn-secondary{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #7e8bae;
+    text-transform: uppercase;
+    background-color: #cbdbe8;
+    padding: 21px 42px;
+    border-radius: 30px;
 }
 
 .btn-free{
     font-weight: 400;
+    letter-spacing: 2.0px;
     color: #fff;
-    background-color: #1085e4;
+    padding: 21px 51px;
+}
+
+.btn-info{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #8085b1;
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 20px 60px;
+    border-radius: 30px;
+    border: 2px solid #dce1e5;
+}
+
+.box-prise-item:nth-of-type(2) .btn-info{
+    color: #fff;
+    background-color: #1a88e1;
+    border: 2px solid #1a88e1;
 }
 
 .grid h2{
@@ -48,5 +97,6 @@ nav{
 .grid a {
     font-size: 14px;
     font-weight: 600;
-    color: #1085e4;
+    color: #1085e4; 
 }
+
