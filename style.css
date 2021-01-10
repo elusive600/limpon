@@ -224,9 +224,18 @@ nav li{
 .box-prise-item {
     text-align: center;
     background-color: #f5faff;
-    width: 350px;
+    flex-basis: 32%;
     padding-bottom: 85px;
 }
+
+/* .box-prise-item:first-child::after,
+.box-prise-item:last-child::after {
+    content: "";
+    z-index: 111;
+    width: 58px;
+    height: 100%;
+    background-image: url(/img/features-img-set.png);
+} */
 
 .box-prise-item h3{
     font-size: 70px;
