@@ -10,8 +10,23 @@ body{
     margin: 0 auto;
 }
 
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 54px;
+    margin-bottom: 305px;
+}
+
+.logo {
+    display: block;
+    background-image: url(/img/logo2.png);
+    width: 181px;
+    height: 49px;
+}
+
 a{
     text-decoration: none;
+    letter-spacing: 2px;
 }
 
 h1 {
@@ -61,6 +76,14 @@ h1 {
     text-transform: uppercase;
 }
 
+header {
+    position: relative;
+    background-image: url(/img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 340px;
+}
+
 .page-start  {
     text-align: center;
     background-color: #edf6ff;
@@ -89,7 +112,7 @@ nav ul{
 }
 
 nav li{
-    padding: 0 15px;
+    padding: 19px 11px 0px 29px;
 }
 
 .btn-group a{
@@ -117,6 +140,57 @@ nav li{
     background-color: #cbdbe8;
     padding: 21px 42px;
     border-radius: 30px;
+}
+
+.screen-img{
+    position: absolute;
+    right: 0;
+    top:190px;
+    display: block;
+    background-image: url(img/header-screen.png);
+    background-repeat: no-repeat;
+    width: 895px;
+    height: 740px;
+}
+
+.page-company {
+    background-image: url(/img/sponsors-bg.png);
+    /* height: 274px; */
+    padding-top: 107px;
+    padding-bottom: 96px;
+}
+
+.list-company{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-company li:first-child {
+    background-image: url(/img/sponsors-logo-token.png);
+    width: 198px;
+    height: 58px;
+}
+
+.list-company li:nth-child(2) {
+    background-image: url(/img/sponsors-logo-magneto.png);
+    width: 200px;
+    height: 69px;
+}
+
+.list-company li:nth-child(3) {
+    background-image: url(/img/sponsors-logo-booho.png);
+    width: 201px;
+    height: 47px;
+}
+
+.list-company li:last-child {
+    background-image: url(/img/sponsors-logo-fractal.png);
+    width: 200px;
+    height: 69px;
 }
 
 .btn-free{
@@ -289,3 +363,88 @@ nav li{
     color:#fff;
 }
 
+.page-subscribe {
+    background: linear-gradient(135deg, #0a2090 0%,#2377cd 100%);
+    padding: 33px 0 70px 0;
+}
+
+.page-subscribe .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-subscribe .flex div {
+    flex-basis: 48.4%;
+}
+
+.page-subscribe div h2{
+    font-size: 50px;
+    font-weight: 600;
+    color:#fff;
+    letter-spacing: -2px;
+    margin-bottom: 28px;
+}
+
+.page-subscribe div h2 span {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #00bffe;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.page-subscribe p {
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    max-width: 407px;
+    width: 100%;
+    line-height: 28px;
+    margin-bottom: 39px;
+}
+
+.box-sibscribe-user {
+    position: relative;
+}
+
+.page-subscribe input {
+    display: block;
+    width: 100%;
+    border: 2px solid #4672c1;
+    border-radius: 50px;
+    background-color: transparent;
+    color: white;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 25px 217px 25px 39px;
+}
+
+.page-subscribe input:focus,
+.box-sibscribe-user .btn-primary:focus {
+    outline: none;
+}
+
+.page-subscribe placeholder {
+    color: white;
+}
+
+.box-sibscribe-user button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.box-sibscribe-user .btn-primary {
+    font-size: 14px;
+    padding: 15px 45px;
+}    
+
+
+
+::-webkit-input-placeholder {color:white;}
+::-moz-placeholder          {color:white;}
+:-moz-placeholder           {color:white;}
+:-ms-input-placeholder      {color:white;}
