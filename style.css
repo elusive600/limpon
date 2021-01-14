@@ -169,6 +169,8 @@ nav li{
 .page-company {
     background-image: url(/img/sponsors-bg.png);
     /* height: 274px; */
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 107px;
     padding-bottom: 96px;
 }
@@ -274,6 +276,24 @@ nav li{
 
 .grid-text {
     grid-area: h;
+}
+
+.grid-text p:first-child{
+    margin: 0;
+    letter-spacing: 0.45px;
+    line-height: 26px;
+}
+
+.grid-text p:last-child{
+    padding-left: 2px;
+    letter-spacing: -0.50px;
+    color:#1a88e1; 
+}
+
+.grid-text p:last-child span{
+    font-weight: 700;
+    letter-spacing: 0.65px;
+    color: black;
 }
 
 .box-prise-item:nth-of-type(2) .btn-info{
