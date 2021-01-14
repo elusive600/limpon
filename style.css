@@ -212,27 +212,154 @@ nav li{
     border: 2px solid #dce1e5;
 }
 
+.grid {
+    display: grid;
+    max-width: 1110px;
+    margin: 0 auto;
+    grid-template-areas:
+        "a b c"
+        "d b c"
+        "d f g"
+        "e f g"
+        "e h h";
+}
+
+.grid-title span {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.grid-title,
+.grid-item,
+.grid-text {
+    margin: 10px;
+}
+
+.grid-title {
+    grid-area: a;
+}
+
+.grid-item-1 {
+    grid-area: b;
+}
+
+.grid-item-2 {
+    grid-area: c;
+}
+
+.grid-item-3 {
+    grid-area: d;
+}
+
+.grid-item-4 {
+    grid-area: f;
+}
+
+.grid-item-5 {
+    grid-area: g;
+}
+
+.grid-item-6 {
+    grid-area: e;
+}
+
+.grid-text {
+    grid-area: h;
+}
+
 .box-prise-item:nth-of-type(2) .btn-info{
     color: #fff;
     background-color: #1a88e1;
     border: 2px solid #1a88e1;
 }
 
+.page-grid {
+    padding: 120px 0 115px 0;
+}
+
+.page-grid .grid-item div {
+    display: block;
+    background-repeat: no-repeat;
+    margin: 0 auto 28px;
+}
+
+.page-grid .grid-item:nth-child(2) div{
+    background: url(/img/features-img-file.png);
+    width: 73px;
+    height: 79px;
+}
+
+.page-grid .grid-item:nth-child(3) div {
+    background: url(/img/features-img-screwdriver.png);
+    width: 89px;
+    height: 85px;
+}
+
+.page-grid .grid-item:nth-child(4) div {
+    background: url(/img/features-img-hand.png);
+    width: 79px;
+    height: 82px;
+}
+
+.page-grid .grid-item:nth-child(5) div {
+    background: url(/img/features-img-screen.png);
+    width: 85px;
+    height: 90px;
+}
+
+.page-grid .grid-item:nth-child(6) div {
+    background: url(/img/features-img-ear.png);
+    width: 100px;
+    height: 87px;
+}
+
+.page-grid .grid-item:nth-child(7) div {
+    background: url(/img/features-img-set.png);
+    width: 103px;
+    height: 92px;
+}
+
 .grid h2{
     font-size: 40px;
     color: #192b59;
+    letter-spacing: -1.3px;
+    padding: 0;
+    margin: 0 0 47px 0;
 }
 
 .grid h2 span{
     font-size: 14px;
     color: #1085e4;
     display: block;
+    margin-bottom: 17px;
 }
 
 .grid-item {
     font-size: 20px;
     font-weight: 600;
     color: #192b59;
+    box-shadow: 0px 0px 5px #f4f4f4;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.grid-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #192b59;
+    letter-spacing: -1px;
+    margin-top: 0px;
+    margin-bottom: 23px;
+}
+
+.grid-item p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #192b59;
+    line-height: 25px;
+    padding: 0 26px;
+    margin-top: 0px;
+    margin-bottom: 18px;
 }
 
 .grid a {
