@@ -129,6 +129,12 @@ nav li{
     padding: 20px 41px;
     border-radius: 30px;
     border: 1px solid #1085e4;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    color: #1085e4;
+    background-color: transparent;
 }
 
 .btn-secondary{
@@ -136,10 +142,17 @@ nav li{
     font-weight: 700;
     letter-spacing: 2.5px;
     color: #7e8bae;
+    border: 1px solid #cbdbe8;
     text-transform: uppercase;
     background-color: #cbdbe8;
     padding: 21px 42px;
     border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    border: 1px solid #cbdbe8;
 }
 
 .screen-img{
@@ -222,17 +235,13 @@ nav li{
         "d f g"
         "e f g"
         "e h h";
+    grid-gap: 33px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid-title span {
     text-transform: uppercase;
     letter-spacing: 3px;
-}
-
-.grid-title,
-.grid-item,
-.grid-text {
-    margin: 10px;
 }
 
 .grid-title {
@@ -337,8 +346,9 @@ nav li{
 .grid-item {
     font-size: 20px;
     font-weight: 600;
+    border-radius: 10px;
     color: #192b59;
-    box-shadow: 0px 0px 5px #f4f4f4;
+    box-shadow: 4px 3px 6px 0px #f4f4f4, -4px 3px 6px 0px #f4f4f4;
     text-align: center;
     padding: 50px 0;
 }
