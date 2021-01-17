@@ -84,6 +84,84 @@ header {
     padding-bottom: 340px;
 }
 
+.page-softwere {
+    background: url(img/software-bg.png) no-repeat ;
+    background-size: cover;
+    padding: 109px 0 156px 0;
+}
+
+.page-softwere .wrap {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-softwere-background {
+    display: block;
+    position: absolute;
+    background-image: url(img/software-screen.png);
+    background-repeat: no-repeat;
+    width: 931px;
+    height: 860px;
+}
+
+.page-softwere .wrap div{
+    flex-basis: 55%;
+}
+
+.page-softwere-icon {
+    display: block;
+    background-image: url(img/new-icon.svg) ;
+    background-repeat: no-repeat;
+    z-index: 5;
+    background-position: -28px 0;
+    width: 117px;
+    height: 101px;
+}
+
+.page-softwere .title {
+    font-size: 50px;
+    font-weight: 600;
+    color: #192b59;
+    max-width: 545px;
+    letter-spacing: -1.9px;
+    margin: 12px 0 26px 0;
+}
+
+.page-softwere p {
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    margin-bottom: 31px;
+}
+
+.page-softwere-list {
+    height: 320px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.page-softwere-list::-webkit-scrollbar { width: 5px; height: 1px;}
+.page-softwere-list::-webkit-scrollbar-button {  background-color: #ffffff; }
+.page-softwere-list::-webkit-scrollbar-track {  background-color: #1085e4;}
+.page-softwere-list::-webkit-scrollbar-track-piece { background-color: #f3f6ff;}
+.page-softwere-list::-webkit-scrollbar-thumb { height: 20px; background-color: #1085e4; border-radius: 3px;}
+.page-softwere-list::-webkit-scrollbar-corner { background-color: #1085e4;}
+.page-softwere-list::-webkit-resizer { background-color: #1085e4;}
+
+.page-softwere-list dt {
+    font-weight: 700;
+    color: #5a6789;
+    margin-bottom: 10px;
+}
+
+.page-softwere-list dd {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+
 .page-start  {
     text-align: center;
     background-color: #edf6ff;
@@ -310,6 +388,7 @@ nav li{
     display: block;
     background-repeat: no-repeat;
     margin: 0 auto 28px;
+    background-position: center ;
 }
 
 .page-grid .grid-item:nth-child(2) div{
