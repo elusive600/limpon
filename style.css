@@ -100,6 +100,7 @@ header {
     position: absolute;
     background-image: url(img/software-screen.png);
     background-repeat: no-repeat;
+    z-index: 1;
     width: 931px;
     height: 860px;
 }
@@ -912,3 +913,179 @@ nav li{
     color: #1085e4;
     margin-top: 0;
 }
+
+.page-team {
+    text-align: center;
+    background: url(img/page-team.png) no-repeat top center;
+    padding: 86px 0 120px 0;
+}
+
+.page-team h2 {
+    font-size: 40px;
+    font-weight: 600;
+    max-width: 560px;
+    color: #fff;
+    letter-spacing: -1.5px;
+    margin-top: 12px;
+    margin-bottom: 140px;
+}
+
+.page-team h2 span {
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #85c8ff;
+    letter-spacing: 4.3px;
+    margin-top: 31px;
+    margin-bottom: 20px;
+}
+
+.box-team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-team-item {
+    position: relative;
+    background-color:#ffffff;
+    flex-basis: 31.5%;
+    box-shadow: 0 2px 10px #8085b1;
+    box-sizing: border-box;
+    padding: 197px 0 40px 0;
+}
+
+.box-team-item img {
+    position: absolute;
+    top: -85px;
+    right: 0;
+    left: 0;
+    margin:0 auto;
+}
+
+.box-team-item .position {
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #1a88e1;
+    font-weight: 900;
+    margin-bottom: 11px;
+}
+
+.box-team-item .name {
+    font-size: 26px;
+    color: #192b59;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+.box-team-item .btn-more {
+    /* display: block; */
+    /* background: url(img/plus.png) no-repeat; */
+    border-radius:50%;
+    background-color:#fafafa ;
+    width: 50px;
+    height: 50px;
+    border:none;
+    transition: 0.4s;
+    margin: 0 auto;
+} 
+
+.box-team-item .btn-more span{
+    text-align: center;
+    font-size: 31px;
+    font-weight: 700;
+    color: #a1aecf;
+    transition: 0.2s;
+} 
+
+.box-team-item .btn-more:focus {
+    outline: none;
+}
+
+.box-team-item .btn-more:hover {
+    background-color: #1a88e1;
+}
+
+.box-team-item .btn-more span:hover {
+    color: white;
+}
+
+.sotial-team {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0 50px;
+    margin: 0;
+}
+
+.sotial-team li {
+    border-radius:50%;
+    background-color:#fafafa ;
+    width: 50px;
+    height: 50px;
+    border:none;
+    transition: 0.4s;
+    /* background: url(img/.box-team-item-fb.png);
+    width: 8px;
+    height: 15px; */
+    margin: 0 auto;
+}
+
+.sotial-team li:hover{ 
+    background-color: #1a88e1;
+}
+
+.sotial-team li .btn-fb{
+    display: block;
+    background: url(img/box-team-item-fb.png) no-repeat;
+    width: 8px;
+    height: 15px; 
+    margin: 17.5px auto;
+    transition: 0.2s;
+}
+
+.sotial-team li .btn-fb:hover{
+    background: url(img/box-team-item-fb-w.png) no-repeat;
+}
+
+.sotial-team li .btn-tw{
+    display: block;
+    background: url(img/box-team-item-tweet.png) no-repeat;
+    width: 15px;
+    height: 12px; 
+    margin: 19px auto;
+    transition: 0.2s;
+}
+
+.sotial-team li .btn-tw:hover{
+    background: url(img/box-team-item-tweet-w.png) no-repeat;
+}
+
+.sotial-team li .btn-bh{
+    display: block;
+    background: url(img/box-team-item-behance.png) no-repeat;
+    width: 17px;
+    height: 11px; 
+    margin: 18.5px auto;
+    transition: 0.2s;
+}
+
+.sotial-team li .btn-bh:hover{
+    background: url(img/box-team-item-behance-w.png) no-repeat;
+}
+
+.sotial-team li .btn-cr{
+    display: block;
+    background: url(img/box-team-item-chrome.png) no-repeat;
+    width: 15px;
+    height: 14px; 
+    margin: 18px auto;
+    transition: 0.2s;
+}
+
+.sotial-team li .btn-cr:hover{
+    background: url(img/box-team-item-chrome-w.png) no-repeat;
+}
+
