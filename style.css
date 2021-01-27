@@ -159,9 +159,32 @@ header {
 }
 
 .page-start  {
+    position: relative;
     text-align: center;
     background-color: #edf6ff;
     padding: 114px 0 115px 0;
+}
+
+.page-start .circle {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -363px;
+    width: 413px;
+    height: 758px;
+    background: url(img/circle.svg) no-repeat;
+    background-size:contain;
+}
+
+.page-start .rect {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -198px;
+    width: 569px;
+    height: 661px;
+    background: url(img/rect.svg) no-repeat;
+    background-size:contain;
 }
 
 .page-screen {
@@ -245,12 +268,15 @@ nav li{
     /* height: 274px; */
     background-repeat: no-repeat;
     background-size: cover;
+    padding-right: 15px;
+    padding-left: 15px;
     padding-top: 107px;
     padding-bottom: 96px;
 }
 
 .list-company{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
@@ -698,6 +724,19 @@ nav li{
     position: relative;
 }
 
+.page-app .intro {
+    color: rgba(0, 0, 0, 0.04);
+    font-size: 300px;
+    font-weight: 900;
+    line-height: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 39px;
+    margin: 0;
+}
+
 .page-app h2 {
     font-size: 50px;
     font-weight: 600;
@@ -1089,3 +1128,222 @@ nav li{
     background: url(img/box-team-item-chrome-w.png) no-repeat;
 }
 
+.page-form {
+    position: relative;
+    background-color: #edf6ff;
+    padding: 70px 0 120px 0;
+    overflow: hidden;
+}
+
+.page-form::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background:url(img/rictangles.svg) no-repeat;
+    width: 857px;
+    height: 871px;
+    bottom: -77px;
+    left: -112px;
+}
+
+.page-form .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.page-form .img-page-form {
+    background: url(img/page-form-img.png) no-repeat;
+    width: 461px;
+    height: 403px;  
+    z-index: 1;
+    flex-basis: 45%;
+}
+
+.page-form h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #192b59;
+    max-width: 500px;
+    letter-spacing: -1.6px;
+    margin-bottom: 53px;
+}
+
+.page-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-form .item {
+    position: relative;
+}
+
+.page-form .content-form-name::after {
+    content: "";
+    background-image:url(img/page-form-smart-man.png);
+    display: block;
+    width: 13px;
+    height: 15px;
+    position: absolute;
+    right: 42px;
+    top: calc(21.5px + 6.5px);
+}
+
+.page-form .content-form-mail::after {
+    content: "";
+    background-image:url(img/page-form-smart-envelope.png);
+    display: block;
+    width: 14px;
+    height: 11px;
+    position: absolute;
+    right: 42px;
+    top: calc(21.5px + 6.5px);
+}
+
+.page-form .content-form-area::after {
+    content: "";
+    background-image:url(img/page-form-smart-pen.png);
+    display: block;
+    width: 14px;
+    height: 15px;
+    position: absolute;
+    right: 42px;
+    top: calc(21.5px + 7.5px);
+}
+
+.page-form form input {
+    font-size: 14px;
+    padding: 25px 80px 25px 38px;
+    border-radius: 50px;
+    width: 510px;
+    border: 2px solid #dce4ec;
+    box-sizing:border-box;
+    margin-bottom: 19px;
+}
+
+.page-form form input::-webkit-input-placeholder, .page-form form textarea::-webkit-input-placeholder {color:#a8b1c7;}
+.page-form form input::-moz-placeholder, .page-form form textarea::-webkit-input-placeholder {color:#a8b1c7;}
+.page-form form input:-moz-placeholder, .page-form form textarea::-webkit-input-placeholder {color:#a8b1c7;}
+.page-form form input:-ms-input-placeholder, .page-form form textarea::-webkit-input-placeholder {color:#a8b1c7;}
+
+.page-form form textarea {
+    font-size: 14px;
+    padding: 25px 80px 100px 38px;
+    border-radius: 35px;
+    width: 510px;
+    box-sizing:border-box;
+    border: 2px solid #dce4ec;
+    resize: none;
+    margin-bottom: 40px;
+}
+
+.page-form form textarea:focus,
+.page-form form input:focus {
+    outline: none;
+}
+
+.page-form form button {
+    position: relative;
+    padding: 22px 0 22px 26px;
+    border-radius: 50px;
+    width: 230px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    color: #ffffff;
+    background-color: #1a88e1;
+    border-color: #1a88e1;
+    border-style: none;
+}
+
+.page-form form button::before {
+    content: "";
+    background-image:url(img/page-form-smart-plane.png);
+    display: block;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    left: 53px;
+    top: 22px;
+}
+
+footer {
+    background-color:#192b59;
+    padding: 25px 0px;
+}
+
+footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    font-size: 16px;
+    color: #b6bae0;
+    margin: 0;
+}
+
+footer a {
+    font-size: 16px;
+    color: #1085e4;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.sotial {
+    display: flex;
+    margin: 0;
+}
+
+footer li {
+    list-style-type: none;
+    padding-left: 22px;
+}
+
+footer li:first-child a{
+    display: block;
+    background: url(img/icons-puck.png);
+    width: 16px;
+    height: 16px;
+    background-position: 0px;
+}
+
+footer li:nth-child(2) a{
+    display: block;
+    background: url(img/icons-puck.png);
+    width: 16px;
+    height: 16px;
+    background-position: -34px;
+}
+
+footer li:nth-child(3) a{
+    display: block;
+    background: url(img/icons-puck.png);
+    width: 21px;
+    height: 16px;
+    background-position: -74px;
+}
+
+footer li:nth-child(4) a{
+    display: block;
+    background: url(img/icons-puck.png);
+    width: 18px;
+    height: 16px;
+    background-position: -117px;
+}
+
+footer li:last-child a{
+    display: block;
+    background: url(img/icons-puck.png);
+    width: 13px;
+    height: 16px;
+    background-position: 13px;
+}
+
+@media (max-width:850px){
+
+}
